@@ -1,0 +1,74 @@
+/*-- Colores --
+header-bg               #df3448
+header-font-color       #f1faee
+body-bg                 #4c7b9d
+div-bg                  #acdadc
+div-title-font-color    #df3448
+div-font-color          #213557
+
+-- Fonts--
+- 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+- 'Lobster', cursive
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+html{
+    text-align: center;
+
+    background-color: #4c7b9d;
+    background-image: url(../css/img/ciudad.png);
+    background-repeat: repeat-x;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: auto;
+    background-attachment: fixed;
+}
+body{
+    margin: 6rem 8rem;
+    padding: 4rem 2rem 0 2rem;
+    border-radius: 1rem;
+    box-shadow: inset 0.25rem 0.25rem 0.7rem rgba(46, 45, 45, 0.611);
+    
+    background-color: #acdadc;
+    color: #213557;
+}
+h1{
+    background-color: #df3448;
+    color: #f1faee;
+    display: flex;
+
+    position: fixed;
+    top: -22px;
+    left: 0px;
+    height: 4rem;
+    width: 100vw;
+
+    font-size: 2rem;
+
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 1.5rem;
+    color: #df3448;
+}
+h1, h2{
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px 2px rgb(48, 47, 47);
+}
+body::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 200px; 
+    background: url('../css/img/gato.png') center center no-repeat;
+    background-size: cover; 
+    position: relative;
+    bottom: -100px;
+    left: 45%; 
+    z-index: 1; 
+}
